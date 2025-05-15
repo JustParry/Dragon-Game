@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/workspaces/drunken-sailor/include 
+CXX_INCLUDES = -I/workspaces/Dragon-Game/include 
 

@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/drunken-sailor
+CMAKE_SOURCE_DIR = /workspaces/Dragon-Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/drunken-sailor/build
+CMAKE_BINARY_DIR = /workspaces/Dragon-Game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/drunken-sailor/build/CMakeFiles /workspaces/drunken-sailor/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Dragon-Game/build/CMakeFiles /workspaces/Dragon-Game/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/drunken-sailor/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Dragon-Game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named drunkensailor
+# Target rules for targets named Dragon-Game
 
 # Build rule for target.
-drunkensailor: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 drunkensailor
-.PHONY : drunkensailor
+Dragon-Game: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Dragon-Game
+.PHONY : Dragon-Game
 
 # fast build rule for target.
-drunkensailor/fast:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/build
-.PHONY : drunkensailor/fast
-
-src/game.o: src/game.cpp.o
-
-.PHONY : src/game.o
-
-# target to build an object file
-src/game.cpp.o:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/src/game.cpp.o
-.PHONY : src/game.cpp.o
-
-src/game.i: src/game.cpp.i
-
-.PHONY : src/game.i
-
-# target to preprocess a source file
-src/game.cpp.i:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/src/game.cpp.i
-.PHONY : src/game.cpp.i
-
-src/game.s: src/game.cpp.s
-
-.PHONY : src/game.s
-
-# target to generate assembly for a file
-src/game.cpp.s:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/src/game.cpp.s
-.PHONY : src/game.cpp.s
+Dragon-Game/fast:
+	$(MAKE) -f CMakeFiles/Dragon-Game.dir/build.make CMakeFiles/Dragon-Game.dir/build
+.PHONY : Dragon-Game/fast
 
 src/main.o: src/main.cpp.o
 
@@ -156,7 +129,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/Dragon-Game.dir/build.make CMakeFiles/Dragon-Game.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -165,7 +138,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/Dragon-Game.dir/build.make CMakeFiles/Dragon-Game.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,7 +147,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/Dragon-Game.dir/build.make CMakeFiles/Dragon-Game.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -183,12 +156,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... drunkensailor"
-	@echo "... src/game.o"
-	@echo "... src/game.i"
-	@echo "... src/game.s"
+	@echo "... rebuild_cache"
+	@echo "... Dragon-Game"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

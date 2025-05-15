@@ -1,4 +1,4 @@
-# Install script for directory: /workspaces/drunken-sailor
+# Install script for directory: /workspaces/Dragon-Game
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/workspaces/drunken-sailor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/workspaces/Dragon-Game/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

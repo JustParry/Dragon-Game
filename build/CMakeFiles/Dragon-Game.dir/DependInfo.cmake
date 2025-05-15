@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/workspaces/drunken-sailor/src/game.cpp" "/workspaces/drunken-sailor/build/CMakeFiles/drunkensailor.dir/src/game.cpp.o"
-  "/workspaces/drunken-sailor/src/main.cpp" "/workspaces/drunken-sailor/build/CMakeFiles/drunkensailor.dir/src/main.cpp.o"
+  "/workspaces/Dragon-Game/src/main.cpp" "/workspaces/Dragon-Game/build/CMakeFiles/Dragon-Game.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -44,16 +44,16 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/drunken-sailor
+CMAKE_SOURCE_DIR = /workspaces/Dragon-Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/drunken-sailor/build
+CMAKE_BINARY_DIR = /workspaces/Dragon-Game/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/drunkensailor.dir/all
+all: CMakeFiles/Dragon-Game.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/drunkensailor.dir/clean
+clean: CMakeFiles/Dragon-Game.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/drunkensailor.dir
+# Target rules for target CMakeFiles/Dragon-Game.dir
 
 # All Build rule for target.
-CMakeFiles/drunkensailor.dir/all:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/depend
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/drunken-sailor/build/CMakeFiles --progress-num=1,2,3 "Built target drunkensailor"
-.PHONY : CMakeFiles/drunkensailor.dir/all
+CMakeFiles/Dragon-Game.dir/all:
+	$(MAKE) -f CMakeFiles/Dragon-Game.dir/build.make CMakeFiles/Dragon-Game.dir/depend
+	$(MAKE) -f CMakeFiles/Dragon-Game.dir/build.make CMakeFiles/Dragon-Game.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/Dragon-Game/build/CMakeFiles --progress-num=1,2 "Built target Dragon-Game"
+.PHONY : CMakeFiles/Dragon-Game.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/drunkensailor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/drunken-sailor/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/drunkensailor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/drunken-sailor/build/CMakeFiles 0
-.PHONY : CMakeFiles/drunkensailor.dir/rule
+CMakeFiles/Dragon-Game.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Dragon-Game/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Dragon-Game.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/Dragon-Game/build/CMakeFiles 0
+.PHONY : CMakeFiles/Dragon-Game.dir/rule
 
 # Convenience name for target.
-drunkensailor: CMakeFiles/drunkensailor.dir/rule
+Dragon-Game: CMakeFiles/Dragon-Game.dir/rule
 
-.PHONY : drunkensailor
+.PHONY : Dragon-Game
 
 # clean rule for target.
-CMakeFiles/drunkensailor.dir/clean:
-	$(MAKE) -f CMakeFiles/drunkensailor.dir/build.make CMakeFiles/drunkensailor.dir/clean
-.PHONY : CMakeFiles/drunkensailor.dir/clean
+CMakeFiles/Dragon-Game.dir/clean:
+	$(MAKE) -f CMakeFiles/Dragon-Game.dir/build.make CMakeFiles/Dragon-Game.dir/clean
+.PHONY : CMakeFiles/Dragon-Game.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
